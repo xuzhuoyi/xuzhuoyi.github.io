@@ -1,54 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="LDE--轻量级的Linux桌面环境 : LDE Team">
+    <title>LDE--轻量级的Linux桌面环境 by xuzhuoyi</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>LDE--轻量级的Linux桌面环境</title>
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/xuzhuoyi">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/xuzhuoyi">View on GitHub</a>
+    <div class="wrapper">
 
-          <h1 id="project_title">LDE--轻量级的Linux桌面环境</h1>
-          <h2 id="project_tagline">LDE Team</h2>
+      <section>
+        <div id="title">
+          <h1>LDE--轻量级的Linux桌面环境</h1>
+          <p>LDE Team</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/xuzhuoyi">xuzhuoyi</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
         <h3>
 <a id="lde-源代码正在每周更新" class="anchor" href="#lde-%E6%BA%90%E4%BB%A3%E7%A0%81%E6%AD%A3%E5%9C%A8%E6%AF%8F%E5%91%A8%E6%9B%B4%E6%96%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>LDE 源代码正在每周更新</h3>
 
-<p>最近，LDE 2 Beta 1 发布了，这是一个基于 Qt 5 的轻量级桌面环境, 并有一些专门开发的基础应用。LDE 的源代码每周都在变化，每次都有很多安全隐患修复和新功能与新特性。LDE 需要大家的帮助以变得更加完美。以下是下载与安装 LDE 的方法以及一些开发者关心的事。</p>
+<p>最近，LDE 2 RC 2 发布了，这是一个基于 Qt 5 的轻量级桌面环境, 并有一些专门开发的基础应用。LDE 的源代码每周都在变化，每次都有很多安全隐患修复和新功能与新特性。LDE 需要大家的帮助以变得更加完美。以下是下载与安装 LDE 的方法以及一些开发者关心的事。</p>
 
 <h3>
 <a id="下载-lde" class="anchor" href="#%E4%B8%8B%E8%BD%BD-lde" aria-hidden="true"><span class="octicon octicon-link"></span></a>下载 LDE</h3>
+
+<p>Ubuntu 用户：<a href="https://github.com/xuzhuoyi/LDE/wiki/Ubuntu-PPA-%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95">PPA 安装</a></p>
+
+<p>Debian 用户：<a href="https://github.com/xuzhuoyi/LDE/releases">下载 deb 安装包</a></p>
+
+<p>Arch Linux 用户：<a href="https://github.com/xuzhuoyi/LDE/wiki/%E4%BD%BF%E7%94%A8-AUR-%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95">AUR 安装</a></p>
+
+<p>其他用户：<a href="https://github.com/xuzhuoyi/LDE/wiki/Debian-%E7%B1%BB%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E">编译安装</a></p>
 
 <p>你可以通过编译源码来获得最新的 LDE 2，源码在
 <a href="https://github.com/xuzhuoyi/LDE">https://github.com/xuzhuoyi/LDE</a></p>
 
 <p>您可以 Star 一下来支持我们。
-编译方法请看：<a href="https://github.com/xuzhuoyi/LDE/wiki/Debian-%E7%B1%BB%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E">编译说明</a></p>
+编译方法请看：<a href="https://github.com/xuzhuoyi/LDE/wiki/Debian-%E7%B1%BB%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E">编译安装</a></p>
 
 <p>我们将稳定二进制程序包放在 Github 的 Release 中，通过地址来获取：
-<a href="https://github.com/xuzhuoyi/LDE/releases">https://github.com/xuzhuoyi/LDE/releases</a>
-（仅有 LDE 0.0.7，LDE 2 即将打包）</p>
+<a href="https://github.com/xuzhuoyi/LDE/releases">https://github.com/xuzhuoyi/LDE/releases</a></p>
 
 <h3>
 <a id="关于-lde" class="anchor" href="#%E5%85%B3%E4%BA%8E-lde" aria-hidden="true"><span class="octicon octicon-link"></span></a>关于 LDE</h3>
 
-<p>LDE，全名为 Loongson Desktop Environment，原来是专为龙芯等 mipsel 平台 CPU 设计的，从 0.0.4 版本以后逐渐向各平台发展。现在能够支持 i386\AMD64\MIPS\ARMv5\ARMv7 等多平台。LDE 项目旨在向用户提供一个低硬件门槛的桌面环境，在轻量化的前提下，尽可能实现更强大的功能。LDE 2 以 Qt 5 作为图形界面库。LDE 提供了一些配套的可独立运行元件。LDE 使用 Openbox 为其默认视窗管理器，并且希望能够提供一个建立在可独立的套件上的轻巧而快速的桌面。    详细介绍</p>
+<p>LDE，全名为 Loongson Desktop Environment，原来是专为龙芯等 mipsel 平台 CPU 设计的，从 0.0.4 版本以后逐渐向各平台发展。现在能够支持 i386\AMD64\MIPS\ARMv5\ARMv7 等多平台。LDE 项目旨在向用户提供一个低硬件门槛的桌面环境，在轻量化的前提下，尽可能实现更强大的功能。LDE 2 以 Qt 5 作为图形界面库。LDE 提供了一些配套的可独立运行元件。LDE 使用 Openbox 为其默认视窗管理器，并且希望能够提供一个建立在可独立的套件上的轻巧而快速的桌面。    [详细介绍]</p>
 
 <h3>
 <a id="已经测试支持系统版本" class="anchor" href="#%E5%B7%B2%E7%BB%8F%E6%B5%8B%E8%AF%95%E6%94%AF%E6%8C%81%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC" aria-hidden="true"><span class="octicon octicon-link"></span></a>已经测试支持系统/版本:</h3>
@@ -56,7 +71,7 @@
 <ul>
 <li>Linux Mint 16/17/17.1</li>
 <li>Debian stable/testing/sid</li>
-<li>Gentoo</li>
+<li>Arch Linux</li>
 <li>OpenSuse 13.1/Factory</li>
 <li>Ubuntu 13.10-15.04 alpha 1</li>
 <li>OS X(仅应用)</li>
@@ -74,16 +89,9 @@
 <p>基于 Qt 4 的 旧版 LDE-Stable 提供官方支持到 2016 年。你也可以帮助维护，代码库是：
 <a href="https://github.com/xuzhuoyi/LDE-Stable">https://github.com/xuzhuoyi/LDE-Stable</a></p>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
-
   </body>
 </html>
